@@ -386,7 +386,7 @@ Drawbacks include less comprehensive and stable documentation, samples, tools, a
 
 * Due to the on-demand structure, the "cold start" aspect on some serverless runtimes could be a performance issue if the runtime removes all instances of a function when idle.
 
-* In more complex cases (e.g., functions triggering other functions), there can be more operational surface area for the same amount of logic.
+* Functions can often be overused, particularly in place of existing service-native integrations, leading to unnecessary complexity. Another common antipattern is functions triggering other functions. These antipatterns can introduce operational overhead, performance inefficiencies, and challenges in testing, debugging, and observability.
 
 * Lack of standardization and ecosystem maturity.
 
